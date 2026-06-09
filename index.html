@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interchained — Sovereign Design System 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="interchained-ds.css">
+</head>
+<body>
+
+<!-- ============================== TOP BAR ============================== -->
+<header class="topbar">
+  <div class="row">
+    <a class="brand-mini" href="#top">
+      <img src="assets/interchained-logo.png" alt="Interchained">
+      <span>INTERCHAINED</span>
+      <span class="tld">/ DS · 2027</span>
+    </a>
+    <nav class="topnav">
+      <a href="#color">Color</a>
+      <a href="#type">Type</a>
+      <a href="#tokens">Tokens</a>
+      <a href="#motifs">Motifs</a>
+      <a href="#components">Components</a>
+      <a href="#context">In&nbsp;Context</a>
+    </nav>
+    <div class="switch" role="group" aria-label="Theme direction">
+      <button id="t-light" aria-pressed="true" onclick="setTheme('light')"><span class="dot"></span>The Mint</button>
+      <button id="t-dark" aria-pressed="false" onclick="setTheme('dark')"><span class="dot"></span>The Vault</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================== MASTHEAD ============================== -->
+<section class="masthead" id="top">
+  <div class="guilloche-field"></div>
+  <div class="wrap inner">
+    <img class="coin" src="assets/interchained-logo.png" alt="Interchained medallion">
+    <div class="lede" style="margin-top:28px">Sovereign Design System</div>
+    <h1>INTERCHAINED</h1>
+    <div class="rule-chain"><span class="ln"></span><span class="hx"></span><span class="ln"></span></div>
+    <p class="tag">A visual language for <b>digital sovereignty</b> — the gravitas of a minted seal, engineered with the precision of a protocol.</p>
+    <div class="meta-strip">
+      <span>Edition <b>MMXXVII</b></span>
+      <span>Directions <b>02</b></span>
+      <span>Palette <b>Navy · Gold · Red</b></span>
+      <span>Type <b>Grotesk × Mono</b></span>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <!-- ============================== COLOR ============================== -->
+  <section class="section reveal" id="color">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Foundation 01</div>
+        <h2>Sovereign palette</h2>
+      </div>
+      <p>Lifted faithfully from the medallion: a deep treasury <b>navy</b>, struck <b>brass-gold</b> foil, and a single <b>heraldic red</b> reserved for moments of consequence.</p>
+    </div>
+
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-bottom:32px">
+      <div class="swatch">
+        <div class="chip" style="background:linear-gradient(135deg,#03396F,#021D38)"><span class="star">PRIMARY</span></div>
+        <div class="meta"><div class="nm">navy / treasury</div><div class="hx">#033866</div></div>
+      </div>
+      <div class="swatch">
+        <div class="chip" style="background:var(--gold-foil)"><span class="star" style="color:#3a2a0c;background:rgba(255,255,255,.35)">FOIL</span></div>
+        <div class="meta"><div class="nm">gold / struck</div><div class="hx">#EABE77 → #FEF8D7</div></div>
+      </div>
+      <div class="swatch">
+        <div class="chip" style="background:linear-gradient(135deg,#CB3A4F,#9E1428)"><span class="star">ACCENT</span></div>
+        <div class="meta"><div class="nm">red / heraldic</div><div class="hx">#B81B32</div></div>
+      </div>
+      <div class="swatch">
+        <div class="chip" style="background:linear-gradient(135deg,#FBFAF4,#EAE4D4);border-bottom:1px solid var(--line)"><span class="star" style="color:#5a5240;background:rgba(0,0,0,.06)">GROUND</span></div>
+        <div class="meta"><div class="nm">paper / cream</div><div class="hx">#F4F1E8</div></div>
+      </div>
+    </div>
+
+    <!-- ramps -->
+    <div style="display:grid;gap:26px">
+      <div>
+        <div class="ramp-cap"><h4>Navy</h4><span class="label">treasury · structure · ink</span></div>
+        <div class="ramp-row">
+          <div class="cell" style="background:#021D38"><span style="color:#9db4cf">900</span></div>
+          <div class="cell" style="background:#03284D"><span style="color:#9db4cf">800</span></div>
+          <div class="cell" style="background:#033866"><span style="color:#cdd9e8">700</span></div>
+          <div class="cell" style="background:#03396F"><span style="color:#cdd9e8">600</span></div>
+          <div class="cell" style="background:#0A4A82"><span style="color:#dce6f2">500</span></div>
+          <div class="cell" style="background:#2E6BA0"><span style="color:#fff">400</span></div>
+          <div class="cell" style="background:#6E93BA"><span style="color:#0b2540">300</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="ramp-cap"><h4>Gold</h4><span class="label">value · emphasis · the seal</span></div>
+        <div class="ramp-row">
+          <div class="cell" style="background:#A9762F"><span style="color:#fff4dd">700</span></div>
+          <div class="cell" style="background:#C99A4E"><span style="color:#3a2a0c">600</span></div>
+          <div class="cell" style="background:#E0B874"><span style="color:#3a2a0c">500</span></div>
+          <div class="cell" style="background:#EABE77"><span style="color:#3a2a0c">400</span></div>
+          <div class="cell" style="background:#F3D28F"><span style="color:#3a2a0c">300</span></div>
+          <div class="cell" style="background:#F6E2B4"><span style="color:#5a4416">200</span></div>
+          <div class="cell" style="background:#FEF8D7"><span style="color:#5a4416">100</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="ramp-cap"><h4>Red</h4><span class="label">alert · live · sealed</span></div>
+        <div class="ramp-row">
+          <div class="cell" style="background:#7E0F20"><span style="color:#f5cdd3">700</span></div>
+          <div class="cell" style="background:#9E1428"><span style="color:#f5cdd3">600</span></div>
+          <div class="cell" style="background:#B81B32"><span style="color:#fff">500</span></div>
+          <div class="cell" style="background:#CB3A4F"><span style="color:#fff">400</span></div>
+          <div class="cell" style="background:var(--surface-2)"><span style="color:var(--ink-3)">—</span></div>
+          <div class="cell" style="background:var(--surface-2)"><span style="color:var(--ink-3)">—</span></div>
+          <div class="cell" style="background:var(--surface-2)"><span style="color:var(--ink-3)">—</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== TYPE ============================== -->
+  <section class="section reveal" id="type">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Foundation 02</div>
+        <h2>Type — grotesk × mono</h2>
+      </div>
+      <p>A precise grotesk for voice and authority; a monospace for the machine-truth layer — labels, data, ledgers, and addresses.</p>
+    </div>
+
+    <div class="font-cards">
+      <div class="font-card">
+        <div class="big" style="font-family:var(--font-display)">Ag</div>
+        <div class="role">Display · Headlines</div>
+        <div class="name">Space Grotesk</div>
+        <div class="gly">600 / 500 / 400 · −2% tracking</div>
+      </div>
+      <div class="font-card">
+        <div class="big" style="font-family:var(--font-body);font-weight:700">Ag</div>
+        <div class="role">Body · Reading</div>
+        <div class="name" style="font-family:var(--font-body)">Hanken Grotesk</div>
+        <div class="gly">800 / 600 / 400 · 1.55 leading</div>
+      </div>
+      <div class="font-card">
+        <div class="big" style="font-family:var(--font-mono);font-weight:500">Ag</div>
+        <div class="role">Mono · Data & Labels</div>
+        <div class="name" style="font-family:var(--font-mono);font-size:17px">JetBrains Mono</div>
+        <div class="gly">0x4f · 1.024 · +16% tracking</div>
+      </div>
+    </div>
+
+    <div class="type-spec">
+      <div class="type-row">
+        <div class="spec"><b>Display</b>72 / 600<br>−2% · 1.0</div>
+        <div class="type-sample" style="font-size:clamp(40px,7vw,72px)">Own your keys.</div>
+      </div>
+      <div class="type-row">
+        <div class="spec"><b>Title</b>40 / 600<br>−2% · 1.05</div>
+        <div class="type-sample" style="font-size:clamp(28px,4.5vw,40px)">The protocol of self-rule</div>
+      </div>
+      <div class="type-row">
+        <div class="spec"><b>Heading</b>24 / 600<br>−1% · 1.2</div>
+        <div class="type-sample" style="font-size:24px">Verifiable by design</div>
+      </div>
+      <div class="type-row">
+        <div class="spec"><b>Body</b>16 / 400<br>Hanken · 1.55</div>
+        <div class="type-sample" style="font-family:var(--font-body);font-size:16px;letter-spacing:0;color:var(--ink-2);max-width:60ch">Sovereignty is not a feature you toggle — it is the substrate. Interchained treats identity, custody, and consent as first-class primitives owned entirely by the individual.</div>
+      </div>
+      <div class="type-row" style="border-bottom:none">
+        <div class="spec"><b>Mono / Label</b>12 / 500<br>+16% · upper</div>
+        <div class="type-sample" style="font-family:var(--font-mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep)">LEDGER 0x4F · BLOCK #2,041,776 · SEALED</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== TOKENS ============================== -->
+  <section class="section reveal" id="tokens">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Foundation 03</div>
+        <h2>Tokens — space, radius, elevation</h2>
+      </div>
+      <p>A 4-point spatial grid, restrained corner radii, and elevation that reads like embossed metal rather than soft web shadow.</p>
+    </div>
+    <div class="token-grid">
+      <div class="token-panel">
+        <h4><span class="hx"></span>Spacing · base 4</h4>
+        <div class="sp-row"><span class="bar" style="width:4px"></span><span class="t">--sp-1 · 4px</span></div>
+        <div class="sp-row"><span class="bar" style="width:8px"></span><span class="t">--sp-2 · 8px</span></div>
+        <div class="sp-row"><span class="bar" style="width:16px"></span><span class="t">--sp-4 · 16px</span></div>
+        <div class="sp-row"><span class="bar" style="width:32px"></span><span class="t">--sp-6 · 32px</span></div>
+        <div class="sp-row"><span class="bar" style="width:64px"></span><span class="t">--sp-8 · 64px</span></div>
+        <div class="sp-row"><span class="bar" style="width:96px"></span><span class="t">--sp-9 · 96px</span></div>
+      </div>
+      <div class="token-panel">
+        <h4><span class="hx"></span>Radius</h4>
+        <div class="radius-demo">
+          <div style="border-radius:4px"><span>4</span></div>
+          <div style="border-radius:8px"><span>8</span></div>
+          <div style="border-radius:12px"><span>12</span></div>
+          <div style="border-radius:18px"><span>18</span></div>
+          <div style="border-radius:28px"><span>28</span></div>
+        </div>
+        <p class="label" style="margin-top:18px;line-height:1.7">Sharp by default. Pills reserved for seals & status — never for primary surfaces.</p>
+      </div>
+      <div class="token-panel">
+        <h4><span class="hx"></span>Elevation</h4>
+        <div class="elev-demo">
+          <div style="box-shadow:var(--shadow-sm)">sm · resting card</div>
+          <div style="box-shadow:var(--shadow-md)">md · raised / hover</div>
+          <div style="box-shadow:var(--shadow-lg)">lg · minted artifact</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== MOTIFS ============================== -->
+  <section class="section reveal" id="motifs">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Foundation 04</div>
+        <h2>Motifs — the engraver's kit</h2>
+      </div>
+      <p>The hexagon core, interlocking chain, and guilloché line-work descend straight from the coin. Guilloché is the anti-counterfeit signature of currency — here it signals authenticity.</p>
+    </div>
+    <div class="motif-grid">
+      <div class="motif motif-guilloche"><span class="cap">Guilloché engraving</span></div>
+      <div class="motif">
+        <div class="hex-seal">
+          <span class="ring"></span><span class="ring r2"></span><span class="ring r3"></span>
+          <img src="assets/interchained-logo.png" alt="">
+        </div>
+        <span class="cap">Hexagon seal</span>
+      </div>
+      <div class="motif">
+        <div class="rings" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+          <span class="c" style="width:56px;height:56px"></span>
+          <span class="c" style="width:104px;height:104px;opacity:.6"></span>
+          <span class="c" style="width:152px;height:152px;opacity:.35;border-style:dashed"></span>
+          <span class="c" style="width:200px;height:200px;opacity:.18"></span>
+        </div>
+        <span class="hx" style="width:18px;height:18px;background:var(--gold-foil);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);position:relative;z-index:2"></span>
+        <span class="cap">Concentric custody rings</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== COMPONENTS ============================== -->
+  <section class="section reveal" id="components">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Library</div>
+        <h2>Components</h2>
+      </div>
+      <p>Built on the tokens above and re-themed live by the toggle. Every accent earns its place.</p>
+    </div>
+
+    <div class="comp-grid">
+      <!-- buttons -->
+      <div class="comp">
+        <span class="label">Buttons</span>
+        <div class="row-wrap" style="margin-bottom:16px">
+          <button class="btn btn-gold"><span class="hx"></span>Mint identity</button>
+          <button class="btn btn-navy">Connect</button>
+        </div>
+        <div class="row-wrap">
+          <button class="btn btn-ghost">Learn more</button>
+          <button class="btn btn-red">Revoke key</button>
+          <button class="btn btn-gold btn-sm">Sign</button>
+        </div>
+      </div>
+
+      <!-- seals / status -->
+      <div class="comp">
+        <span class="label">Seals &amp; status</span>
+        <div class="row-wrap">
+          <span class="seal seal-verified"><span class="dot"></span>Verified</span>
+          <span class="seal seal-live"><span class="dot"></span>On-chain · Live</span>
+          <span class="seal seal-quiet"><span class="dot"></span>Draft</span>
+        </div>
+        <div class="row-wrap" style="margin-top:20px;align-items:center">
+          <span class="label" style="text-transform:none">Auto-custody</span>
+          <button class="tgl" aria-pressed="true" onclick="this.setAttribute('aria-pressed', this.getAttribute('aria-pressed')==='true'?'false':'true')"></button>
+          <span class="label" style="text-transform:none;margin-left:14px">Public ledger</span>
+          <button class="tgl" aria-pressed="false" onclick="this.setAttribute('aria-pressed', this.getAttribute('aria-pressed')==='true'?'false':'true')"></button>
+        </div>
+      </div>
+
+      <!-- input -->
+      <div class="comp">
+        <span class="label">Form field</span>
+        <div class="field" style="margin-bottom:18px">
+          <label>Sovereign address</label>
+          <div class="inp"><span class="hx"></span><input type="text" value="ic1q · 4f8a · 0xd2…91c" spellcheck="false"></div>
+        </div>
+        <div class="field">
+          <label>Recovery phrase</label>
+          <div class="inp"><span class="hx"></span><input type="text" placeholder="Enter 12-word seal…"></div>
+        </div>
+      </div>
+
+      <!-- alert -->
+      <div class="comp">
+        <span class="label">Notices</span>
+        <div class="alert alert-gold" style="margin-bottom:14px">
+          <span class="hx"></span>
+          <div class="t"><b>Self-custody active</b>Your keys never leave this device. Interchained cannot recover them for you.</div>
+        </div>
+        <div class="alert alert-red">
+          <span class="hx"></span>
+          <div class="t"><b>Signature required</b>This action transfers sovereignty and cannot be reversed once sealed.</div>
+        </div>
+      </div>
+
+      <!-- asset/data card -->
+      <div class="comp" style="grid-column:1/-1">
+        <span class="label">Data cards</span>
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+          <div class="asset-card">
+            <div class="top"><span class="id">VAULT · 0x4F</span><span class="seal seal-verified"><span class="dot"></span>Sealed</span></div>
+            <div class="val">128,400</div>
+            <div class="sub">IC · sovereign units</div>
+            <div class="chip-row"><span class="label">24h <span class="delta">+4.2%</span></span></div>
+          </div>
+          <div class="asset-card">
+            <div class="top"><span class="id">IDENTITY</span><span class="seal seal-live"><span class="dot"></span>Live</span></div>
+            <div class="val">3</div>
+            <div class="sub">active attestations</div>
+            <div class="chip-row"><span class="label">Last sealed · 2m ago</span></div>
+          </div>
+          <div class="asset-card">
+            <div class="top"><span class="id">NETWORK</span><span class="seal seal-quiet"><span class="dot"></span>Synced</span></div>
+            <div class="val">2,041,776</div>
+            <div class="sub">block height</div>
+            <div class="chip-row"><span class="label">Peers · 41</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== IN CONTEXT ============================== -->
+  <section class="section reveal" id="context">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Applied</div>
+        <h2>The system in context</h2>
+      </div>
+      <p>The same tokens powering a marketing hero and a mobile wallet. Flip the toggle to watch both directions re-skin in place.</p>
+    </div>
+
+    <div class="context-grid">
+      <!-- mini landing -->
+      <div class="mini-landing">
+        <div class="ml-guilloche"></div>
+        <div class="ml-nav">
+          <div class="lg"><img src="assets/interchained-logo.png" alt="">INTERCHAINED</div>
+          <div class="lk"><span>Protocol</span><span>Identity</span><span>Docs</span></div>
+        </div>
+        <div class="ml-body">
+          <div class="kbd">Protocol for digital sovereignty</div>
+          <h3>Own your keys.<br>Own your <em>self.</em></h3>
+          <p>Identity, custody, and consent as primitives you alone control. No intermediary. No recovery desk. Just you, sealed.</p>
+          <div class="ml-cta">
+            <button class="btn btn-gold"><span class="hx"></span>Mint your identity</button>
+            <button class="btn btn-ghost" style="color:var(--gold-100);border-color:rgba(234,190,119,.4)">Read the protocol</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- phone -->
+      <div class="phone">
+        <div class="notch"></div>
+        <div class="scr">
+          <div class="ph-status"><span>9:41</span><span>IC ◢◢◣ ⬡</span></div>
+          <div class="ph-head">
+            <div><div class="hi">Sovereign</div><div class="nm">Vault</div></div>
+            <div class="av"></div>
+          </div>
+          <div class="ph-balance">
+            <div class="lb">Total custody</div>
+            <div class="amt">128,400 <small>IC</small></div>
+            <div class="dl">≈ $241,392 · self-held</div>
+          </div>
+          <div class="ph-actions">
+            <button><span class="hx"></span>Send</button>
+            <button><span class="hx"></span>Receive</button>
+            <button><span class="hx"></span>Seal</button>
+          </div>
+          <div class="ph-list">
+            <div class="ti">Recent · sealed</div>
+            <div class="ph-item">
+              <div class="ic"><span class="hx"></span></div>
+              <div class="mid"><div class="a">Identity attested</div><div class="b">block #2,041,776</div></div>
+              <div class="amt pos">+1</div>
+            </div>
+            <div class="ph-item">
+              <div class="ic"><span class="hx"></span></div>
+              <div class="mid"><div class="a">Received · grant</div><div class="b">from ic1q·8d…2f</div></div>
+              <div class="amt pos">+4,200</div>
+            </div>
+            <div class="ph-item">
+              <div class="ic"><span class="hx"></span></div>
+              <div class="mid"><div class="a">Key rotated</div><div class="b">2 minutes ago</div></div>
+              <div class="amt">—</div>
+            </div>
+          </div>
+          <div class="ph-tab"><span class="t on"></span><span class="t"></span><span class="t"></span><span class="t"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="foot reveal">
+    <img class="coin-s" src="assets/interchained-logo.png" alt="">
+    <div class="nm">INTERCHAINED</div>
+    <div class="mt">Sovereign Design System · Edition MMXXVII · Navy · Gold · Red</div>
+  </footer>
+
+</main>
+
+<script>
+  function setTheme(t){
+    document.documentElement.setAttribute('data-theme', t);
+    document.getElementById('t-light').setAttribute('aria-pressed', t==='light');
+    document.getElementById('t-dark').setAttribute('aria-pressed', t==='dark');
+    try{ localStorage.setItem('ic-theme', t); }catch(e){}
+  }
+  try{ const s = localStorage.getItem('ic-theme'); if(s) setTheme(s); }catch(e){}
+
+  // reveal on scroll
+  const io = new IntersectionObserver((es)=>{
+    es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
