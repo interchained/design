@@ -8,7 +8,7 @@
 
 ## ⬡ For the Chain Dwellers
 
-Long before the Interchain, value lived in vaults you could not see, guarded by
+Long before the Interchained, value lived in vaults you could not see, guarded by
 hands that were not yours. You were a row in someone else's ledger — a number
 they could edit while you slept. To *hold* anything, you first had to *ask*.
 
